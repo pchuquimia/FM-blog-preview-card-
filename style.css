@@ -26,15 +26,26 @@ body {
   border-radius: 1rem;
   outline: 2px solid #000;
   margin: 3rem auto;
-  cursor: pointer;
+  border: 2px solid #000;
   transition: 0.2s ease-in-out;
 }
-
 .card h1 {
   font-size: 24px;
-  color: var(--gray-950);
   font-weight: 800;
+}
+.card h1 a {
+  color: var(--gray-950);
+  text-decoration: none;
   transition: 0.2s ease-in-out;
+}
+.card h1 a:hover,
+.card h1 a:focus-visible {
+  color: var(--yellow);
+}
+.card h1 a:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 4px;
+  border-radius: 0.25rem;
 }
 .card .card__learning {
   background-color: var(--yellow);
@@ -83,9 +94,6 @@ body {
 }
 
 @media screen and (min-width: 980px) {
-  .card:hover h1 {
-    color: var(--yellow);
-  }
   .card:hover {
     box-shadow: 15px 15px 0px #000;
   }
