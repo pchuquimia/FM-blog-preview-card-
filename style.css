@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@500;1;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap");
 :root {
   --yellow: hsl(47, 88%, 63%);
   --white: hsl(0, 0%, 100%);
@@ -33,16 +33,16 @@ body {
 .card h1 {
   font-size: 24px;
   color: var(--gray-950);
-  font-weight: 1000;
+  font-weight: 800;
   transition: 0.2s ease-in-out;
 }
-.card h4 {
+.card .card__learning {
   background-color: var(--yellow);
   font-weight: 800;
   padding: 0.3rem 0.6rem;
-  width: 80px;
   border-radius: 0.2rem;
   margin: 1rem 0;
+  display: inline-block;
 }
 .card .card__image {
   border-radius: 0.5rem;
@@ -50,7 +50,7 @@ body {
 }
 .card .card__date {
   color: var(--gray-950);
-  font-weight: 600;
+  font-weight: 800;
   font-size: 1rem;
   margin-top: 0;
 }
@@ -72,13 +72,13 @@ body {
   margin-right: 1rem;
 }
 .profile .profile__name {
-  font-weight: 1000;
+  font-weight: 800;
   color: var(--gray-950);
 }
 .card .card__description {
   font-size: 16px;
   color: var(--gray-500);
-  font-weight: 550;
+  font-weight: 500;
   line-height: 1.5;
 }
 
